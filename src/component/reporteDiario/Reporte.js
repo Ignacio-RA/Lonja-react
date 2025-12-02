@@ -31,7 +31,7 @@ function ReporteDiario() {
             try {
                 // 📞 LLAMADA A LA API CORREGIDA:
                 // Debes usar la fecha del estado 'fecha' en el query string
-                const resultado = await clienteAxios.get(`/api/consulta-compras?fecha=${fecha}`);
+                const resultado = await clienteAxios.get(`/api/consulta-compras-fecha?fecha=${fecha}`);
                 const data = resultado.data;
                 
                 setCompras(data);
